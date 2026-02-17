@@ -363,9 +363,9 @@ ol li::marker {
 /* progress bar */
 #scrollProgress {
   position: fixed;
-  top: 66px;
-  left: 1px;
-  width: 4px;
+  top: 65px;
+  /* left: 1px; */
+  width: 5px;
   opacity: 0.25;
   height: 0%;
   background: var(--accent);
