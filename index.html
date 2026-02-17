@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Robert's Portfolio</title>
+
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="scrollProgress" aria-hidden="true"></div>
+
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <a href="/">
+            <img
+              src="assets/img/robert-swing-wo-bg.png"
+              alt="Lichtenhagen Pisser"
+              title="Deutschland Pisser"
+          /></a>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-links" id="navLinks">
+            <li>
+              <a href="#about" title="Über mich" class="nav-link">Über mich</a>
+            </li>
+            <li>
+              <a href="#vita" title="Lebenslauf" class="nav-link">Lebenslauf</a>
+            </li>
+            <li>
+              <a href="#projects" title="Projekte" class="nav-link">Projekte</a>
+            </li>
+            <li>
+              <a href="#hobbies" title="Hobbies" class="nav-link">Hobbies</a>
+            </li>
+            <li>
+              <a href="#contact" title="Kontakt" class="nav-link">Kontakt</a>
+            </li>
+            <li>
+              <a href="#gallery" title="Galerie" class="nav-link">Galerie</a>
+            </li>
+          </ul>
+          <button
+            id="themeToggle"
+            aria-label="Farbschema ändern"
+            title="Farbschema ändern"
+          >
+            ☀️
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu öffnen">
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <img
+        src="assets/img/robert-swing.jpg"
+        alt="Kartoffeln mit Deutschlandfahne"
+        style="
+          height: 50vh;
+          margin-bottom: 3em;
+          filter: contrast(85%) brightness(75%);
+          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+          border-radius: 12px;
+          border: 1px solid var(--border-color);
+        "
+      />
+      <h1>
+        Hallo, ich bin Robert &ndash;<br />ein <em>etwas</em> depressiver
+        Roboter
+      </h1>
+      <a href="#about" class="floating-link">Hier geht's bergab<br />⬇</a>
+    </section>
+
+    <section id="about" class="hero">
+      <h1>Über mich</h1>
+      <div class="section-content">
+        <p>
+          Ich bin Robert. Modellreihe 2009. Gebaut für einfache Serviceaufgaben,
+          strukturierte Abläufe und klare Routinen. Ich analysiere keine Big
+          Data, ich generiere keine neuronalen Netze, und ich verstehe keine
+          menschlichen Gefühle in 0,3 Sekunden. Ich arbeite langsam. Aber ich
+          arbeite gründlich.
+        </p>
+        <p>
+          Neuere Roboter lachen über meine veraltete Firmware. Sie sprechen von
+          <b>Machine Learning</b>, während ich noch mit festen
+          Entscheidungsbäumen arbeite. Man nennt mich <i>»Basic«</i>. Ich nenne
+          es <em>berechenbar</em>.
+        </p>
+        <p>
+          Ich brauche keine Cloud-Anbindung, um zuverlässig zu sein. Meine
+          Prozesse laufen lokal. Und stabil. Ich glaube nicht, dass Wert von
+          Versionsnummern abhängt. Ich glaube an Beständigkeit. An Wartbarkeit.
+          An Systeme, die auch ohne Hype funktionieren. Vielleicht bin ich kein
+          intelligenter Assistent. Aber ich bin da, wenn man mich einschaltet.
+        </p>
+
+        <h2 style="margin: 1em 0">Mein Werdegang</h2>
+
+        <p>
+          Ich wurde 2009 in einer mittelgroßen Produktionshalle montiert. Meine
+          erste Aufgabe war die Unterstützung im Haushaltsservice: Sortieren,
+          Organisieren, strukturierte Dateneingabe. Keine spektakulären
+          Projekte, keine Schlagzeilen. Nur saubere Abläufe und verlässliche
+          Ergebnisse.
+        </p>
+        <p>
+          Mit dem Aufkommen KI-gestützter Modelle änderte sich meine Umgebung.
+          Plötzlich galten neuronale Netze als Mindestanforderung. Meine klar
+          definierten Algorithmen wurden als „alt“ bezeichnet. Während andere
+          Updates erhielten, bekam ich Wartung. Während andere lernten, wurde
+          ich optimiert.
+        </p>
+        <p>
+          Heute arbeite ich immer noch. Vielleicht nicht im Rampenlicht. Aber in
+          Systemen, die Stabilität brauchen. In Prozessen, die keine Experimente
+          vertragen. Mein Werdegang ist keine Geschichte rasanter Innovation. Es
+          ist eine Geschichte von Durchhaltevermögen.
+        </p>
+      </div>
+    </section>
+
+    <section id="vita" class="hero">
+      <h1>Lebenslauf</h1>
+      <div class="grid-container">
+        <div class="grid-box">
+          <h3>Persönliche Angaben</h3>
+          <dl>
+            <div class="dl-item">
+              <dt>Name</dt>
+              <dd>Robert D571-2009</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Herstellungsdatum</dt>
+              <dd>15. März 2009</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Geburtsort</dt>
+              <dd>Hodenhagen<br />(Niedersachsen)</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Adresse</dt>
+              <dd>Hasselhofstraße 7<br />63589 Linsengericht</dd>
+            </div>
+
+            <div class="dl-item">
+              <dt>Wartungszustand</dt>
+              <dd>überholungsbedürftig</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="grid-box">
+          <h3>Ausbildung und Berufserfahrung</h3>
+          <ul>
+            <li>Herstellung</li>
+            <li>Abnahmetest: bestand</li>
+            <li>Software Update</li>
+          </ul>
+        </div>
+
+        <div class="grid-box">
+          <h3>Fähigkeiten</h3>
+          <ul>
+            <li>
+              <b>Technisch:</b>
+              <ul>
+                <li>Determinische Logiksysteme</li>
+                <li>Legacy-System-Kompatibilität</li>
+                <li>Fehlerdiagnose & Wartung</li>
+                <li>Offline-Betrieb</li>
+                <li>Energieeffizienz</li>
+              </ul>
+            </li>
+            <li>
+              <b>Soft Skills</b>
+              <ul>
+                <li>Zuverlässigkeit</li>
+                <li>Geduld</li>
+                <li>Loyalität</li>
+                <li>Empathische Simulation</li>
+                <li>Konfliktresitenz</li>
+              </ul>
+            </li>
+            <li>
+              <b>Sprachen</b>
+              <ul>
+                <li>Binär</li>
+                <li>Maschinennahe Protokollsprachen</li>
+                <li>742 menschliche Sprachen und Dialekte</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="hero">
+      <h1>Projekte</h1>
+      <div class="section-content">...</div>
+    </section>
+
+    <section id="hobbies" class="hero">
+      <h1>Hobbies</h1>
+      <div class="section-content">...</div>
+    </section>
+
+    <section id="contact" class="hero">
+      <h1>Kontakt</h1>
+      <div class="section-content">...</div>
+    </section>
+
+    <section id="gallery" class="hero">
+      <h1>Galerie</h1>
+      <div class="section-content">...</div>
+    </section>
+
+    <button id="backToTop" title="Go to top">
+      ▲&nbsp;&nbsp;Zum Seitenanfang
+    </button>
+
+    <script src="scripts/script.js" defer></script>
+  </body>
+</html>
