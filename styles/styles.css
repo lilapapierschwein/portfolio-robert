@@ -240,6 +240,10 @@ dl dd {
   color: var(--accent);
 }
 
+.contact-card form {
+  text-align: left;
+}
+
 .contact-link {
   display: flex;
   align-items: center;
@@ -335,12 +339,135 @@ h3 {
   color: var(--text-secondary);
 }
 
-/* #contact p { */
-/*   margin-top: 2em; */
-/* } */
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0;
+  font-size: 0.95rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+}
 
-/* #contact a { */
-/* } */
+.projects-table caption {
+  caption-side: top;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.list-headline {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.projects-table thead,
+tfoot {
+  background: var(--accent);
+  color: white;
+}
+
+.projects-table th,
+.projects-table td {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+}
+
+.projects-table thead,
+tfoot th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.projects-table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.2s ease;
+}
+
+.projects-table .slot {
+  background-color: #202326;
+}
+
+.projects-table #slotLunch {
+  text-align: center;
+  font-weight: 600;
+  background-color: rgba(219, 219, 214, 0.239);
+}
+
+.projects-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.projects-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.projects-table td:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.projects-table a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.projects-table tbody td {
+  text-align: center;
+}
+
+.projects-table tfoot td {
+  text-align: right;
+  font-weight: 600;
+}
+
+fieldset {
+  margin: 1em 0;
+  padding: 1em 0.8em;
+  color: var(--text-primary);
+  border-color: var(--border-color);
+  border-radius: 8px;
+}
+
+.form-group {
+  display: block;
+  margin: 0.8em 0;
+}
+
+.form-group input,
+textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 0.2em 0.2em;
+  margin-top: 0.4em;
+}
+
+input,
+textarea::placeholder {
+  font-style: italic;
+}
+
+form button {
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+form span {
+  font-style: italic;
+}
+
+#formBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
 
 #contact a:hover {
   color: var(--accent-hover);
@@ -350,7 +477,7 @@ ol li::marker {
   color: var(--accent);
   font-weight: 600;
 }
-/* Responsive */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;

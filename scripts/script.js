@@ -98,6 +98,15 @@ function setupColorToggle() {
   });
 }
 
+function setUpAlerts() {
+  const sendFormBtn = document.getElementById("sendFormBtn");
+
+  sendFormBtn.addEventListener("click", (e) => {
+    window.alert("Hier kann noch nichts gesendet werden!");
+    e.preventDefault();
+  });
+}
+
 function init() {
   if (window.innerWidth <= 768) {
     backToTopBtn.innerHTML = backToTopBtn.innerHTML = "▲";
@@ -108,6 +117,7 @@ function init() {
   setupNavBar();
   setupScrollAnimations();
   setupColorToggle();
+  setUpAlerts();
 }
 
 init();

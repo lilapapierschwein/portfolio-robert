@@ -40,7 +40,9 @@
               <a href="#projects" title="Projekte" class="nav-link">Projekte</a>
             </li>
             <li>
-              <a href="#hobbies" title="Hobbies" class="nav-link">Hobbies</a>
+              <a href="#schedule" title="Stundenplan" class="nav-link"
+                >Stundenplan</a
+              >
             </li>
             <li>
               <a href="#contact" title="Kontakt" class="nav-link">Kontakt</a>
@@ -76,7 +78,7 @@
           border: 1px solid var(--border-color);
         "
       />
-      <h1>Hallo, ich bin Robert &ndash;<br />ein etwas depressiver Roboter</h1>
+      <h1>Hallo, ich bin Robert &ndash;<br />ein leicht depressiver Roboter</h1>
       <a href="#about" class="floating-link">Hier geht's bergab<br />⬇</a>
     </section>
 
@@ -211,47 +213,150 @@
       <h1>Projekte</h1>
 
       <div class="section-content">
-        <div class="grid-container grid-sm">
-          <div class="grid-box">
-            <h2>Müll rausbringen</h2>
-            <img
-              src="assets/img/trash.jpg"
-              alt="Eine Ansammlung von Plastikmüll"
-              width="250"
-              style="border-radius: 8px"
-            />
-            <p>
-              Gerade eben erledigt &ndash; Treppe runter & wieder hoch war crazy
-              💪
-            </p>
-          </div>
+        <table class="projects-table">
+          <caption>
+            Meine Lernfortschritte im Kurs Webentwicklung
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Technologie</th>
+              <th scope="col">Typ</th>
+              <th scope="col">Gelernt am</th>
+              <th scope="col">Schwierigkeit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="table-row-head" scope="row">HTML5</th>
+              <td>Markup</td>
+              <td>Montag</td>
+              <td>Leicht</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">CSS</th>
+              <td>???</td>
+              <td>???</td>
+              <td>Mittel</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">VS Code</th>
+              <td>Editor</td>
+              <td>Montag</td>
+              <td>Schwer</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">Git</th>
+              <td>Versionsverwaltung</td>
+              <td>???</td>
+              <td>Mittel</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">W3C Validator</th>
+              <td>Tool</td>
+              <td>Montag</td>
+              <td>Leicht</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">Browser DevTools</th>
+              <td>Tool</td>
+              <td>???</td>
+              <td>Mittel</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th scope="row" colspan="4" style="text-align: left">6</th>
+          </tfoot>
+        </table>
 
-          <div class="grid-box">
-            <h2>HTML-Portfolio</h2>
-            <img
-              src="assets/img/html_editor.jpg"
-              alt="HTML-Quelltext in einem Code-Editor mit Syntax-Highlighting"
-              width="250"
-              style="border-radius: 8px"
-            />
-            <p><em>HYPER HYPER</em>-text</p>
-          </div>
-        </div>
+        <!-- <div class="grid-container grid-sm"> -->
+        <!--   <div class="grid-box"> -->
+        <!--     <h2>Müll rausbringen</h2> -->
+        <!--     <img -->
+        <!--       src="assets/img/trash.jpg" -->
+        <!--       alt="Eine Ansammlung von Plastikmüll" -->
+        <!--       width="250" -->
+        <!--       style="border-radius: 8px" -->
+        <!--     /> -->
+        <!--     <p> -->
+        <!--       Gerade eben erledigt &ndash; Treppe runter & wieder hoch war crazy -->
+        <!--       💪 -->
+        <!--     </p> -->
+        <!--   </div> -->
+        <!--  -->
+        <!--   <div class="grid-box"> -->
+        <!--     <h2>HTML-Portfolio</h2> -->
+        <!--     <img -->
+        <!--       src="assets/img/html_editor.jpg" -->
+        <!--       alt="HTML-Quelltext in einem Code-Editor mit Syntax-Highlighting" -->
+        <!--       width="250" -->
+        <!--       style="border-radius: 8px" -->
+        <!--     /> -->
+        <!--     <p><em>HYPER HYPER</em>-text</p> -->
+        <!--   </div> -->
+        <!-- </div> -->
       </div>
     </section>
 
-    <section id="hobbies" class="hero">
-      <h1>Hobbies</h1>
+    <section id="schedule" class="hero">
+      <h1>Stundenplan</h1>
       <div class="section-content">
-        <p>
-          Ich hänge gern <em>viel zu lange</em> im Internet ab und fühle mich
-          danach dumm. 🌐
-        </p>
-        <p>
-          Zwischendurch les ich aber auch mal ein Buch und
-          <strong>fühle</strong> mich <u>kluk</u>. 📚
-        </p>
-        <p>Im Sommer esse ich gerne Eis, weil Eis is nice. 🍨</p>
+        <table class="projects-table">
+          <caption>
+            Meine Lernfortschritte im Kurs Webentwicklung
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Zeit</th>
+              <th scope="col">Montag</th>
+              <th scope="col">Dienstag</th>
+              <th scope="col">Mittwoch</th>
+              <th scope="col">Donnerstag</th>
+              <th scope="col">Freitag</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="table-row-head" scope="row">08:00-09:30</th>
+              <td rowspan="2" class="slot slot-double">Webentwicklung</td>
+              <td class="slot">Dokumentation</td>
+              <td class="slot">Versionsverwaltung</td>
+              <td class="slot-free">-</td>
+              <td rowspan="2" class="slot slot-double">Software-Architektur</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">10:00-11:30</th>
+              <td class="slot-free">-</td>
+              <td class="slot">Code-Editoren</td>
+              <td class="slot">Netzwerke</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">12:00-13:00</th>
+              <td colspan="5" id="slotLunch">Mittagspause</td>
+            </tr>
+            <tr>
+              <th class="table-row-head" scope="row">13:00-14:30</th>
+              <td class="slot">Versionsverwaltung</td>
+              <td rowspan="2" class="slot slot-double">Debugging</td>
+              <td class="slot-free">-</td>
+              <td class="slot">Hardware</td>
+              <td rowspan="2" class="slot slot-double">Algorithmen</td>
+            </tr>
+            <tr>
+              <th class="slot table-row-head" scope="row">15:00-16:30</th>
+              <td class="slot">Code-Editoren</td>
+              <td class="slot">Informationssysteme</td>
+              <td class="slot">Datenbanken</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th scope="row" style="text-align: left">Stunden</th>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4</td>
+          </tfoot>
+        </table>
       </div>
     </section>
 
@@ -259,35 +364,75 @@
       <h1>Kontakt</h1>
       <div class="section-content">
         <div class="contact-card">
-          <h3>Adresse</h3>
-          <p>
-            Robert D571-2009<br />
-            Hasselhofstraße 7<br />
-            63589 Linsengericht
-          </p>
-        </div>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Persoenliche Daten</legend>
 
-        <div class="contact-card">
-          <h3>Kontakt aufnehmen</h3>
-          <span class="contact-link"
-            ><img
-              src="assets/icons/icon-phone-96.png"
-              alt="E-Mail Icon"
-              title="E-Mail"
-            />
-            <a href="mailto:david_looks_for_freedom@example.com"
-              >david_looks_for_freedom@example.com</a
-            ></span
-          >
-          <br />
-          <span class="contact-link">
-            <img
-              src="assets/icons/icon-phone-96.png"
-              alt="Telefon Icon"
-              title="Telefon"
-            />
-            <a href="tel:+49 30 9999999999">(+49) 30 9999999999</a></span
-          >
+              <div class="form-group">
+                <label for="vorname">Vorname</label><br />
+                <input
+                  type="text"
+                  id="vorname"
+                  name="vorname"
+                  placeholder="Vornamen eingeben"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="name">Nachname</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Namen eingeben"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail*</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-Mail Adresse eingeben"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Ihre Nachricht</legend>
+
+              <div class="form-group">
+                <label for="subject">Betreff</label><br />
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Betreff angeben"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nachricht*</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  cols="50"
+                  placeholder="Ihre Nachricht hier..."
+                  required
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <span id="reqFieldHint">*Pflichtfeld</span>
+
+            <div id="formBtnContainer">
+              <button type="reset">Formular Zurücksetzen</button>
+              <button type="submit" id="sendFormBtn">Absenden</button>
+            </div>
+          </form>
         </div>
 
         <div class="contact-card">
@@ -328,14 +473,12 @@
         <div class="grid-container grid-sm">
           <div class="grid-box">
             <figure>
-              <a href="projekte.html">
-                <img
-                  width="300px"
-                  src="assets/img/street01.jpg"
-                  alt="Nasse Strasse umsäumt vin Bäumen"
-                />
-              </a>
-              <figcaption>Eine nasse Strasse (Klick!)</figcaption>
+              <img
+                width="300px"
+                src="assets/img/street01.jpg"
+                alt="Nasse Strasse umsäumt von Bäumen"
+              />
+              <figcaption>Eine nasse Strasse</figcaption>
             </figure>
           </div>
 
