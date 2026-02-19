@@ -1,3 +1,5 @@
+// not my finest work, pls don't hate!
+
 // nav
 function setupNavBar() {
   const hamburgerMenu = document.getElementById("hamburger");
@@ -100,7 +102,6 @@ function setupColorToggle() {
 
 // projects count
 function setUpProjectsCount() {
-  // const projectsTableBody = document.getElementById("projectsTableBody");
   const tableBodyRows = document.querySelectorAll(".table-row-body");
   const projectsTableFoot = document.getElementById("projectsTableFoot");
 

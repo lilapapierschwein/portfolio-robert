@@ -1,3 +1,12 @@
+/* 
+beware: didn't clean this this up due to lack of time 
+i intended i spend on this project. there will be some 
+inconsistencies, redundancies and most likely some 
+unintended behavior going on here, but it can still
+be cannibalized if needed, so fuck it.
+*/
+
+/* basics */
 * {
   margin: 0;
   padding: 0;
@@ -193,6 +202,7 @@ section {
   text-align: left;
 }
 
+/* lists */
 dl {
   margin-top: 0.5em;
   display: flex;
@@ -212,6 +222,7 @@ dl dd {
   gap: 0.2em;
 }
 
+/* grids */
 .grid-box {
   padding: 0.8em;
   background-color: var(--bg-secondary);
@@ -222,6 +233,7 @@ grid-box.grid-sm {
   grid-template-columns: 1fr 1fr;
 }
 
+/* img */
 .gallery-fig {
   display: flex;
   flex-direction: column;
@@ -418,6 +430,7 @@ h3 {
   letter-spacing: 0.3px;
 }
 
+/* tables */
 .projects-table thead,
 tfoot {
   background: var(--accent);
@@ -515,7 +528,6 @@ fieldset legend {
 
 .form-group {
   display: block;
-  /* margin: 0.8em 0; */
 }
 
 .form-group input,
