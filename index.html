@@ -6,8 +6,8 @@
 
     <title>Robert's Portfolio</title>
 
-    <link rel="shortcut icon" href="assets/icons/fav/favicon.ico" />
-    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/fav/favicon.ico" />
+    <link href="styles/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +25,8 @@
             <img
               src="assets/img/robert-swing-wo-bg.png"
               alt="Trauriger Roboter sitzt auf einer Schaukel"
+              id="navLogo"
+              class="nav-logo-bright"
           /></a>
         </div>
 
@@ -40,11 +42,6 @@
               <a href="#projects" title="Projekte" class="nav-link">Projekte</a>
             </li>
             <li>
-              <a href="#schedule" title="Stundenplan" class="nav-link"
-                >Stundenplan</a
-              >
-            </li>
-            <li>
               <a href="#contact" title="Kontakt" class="nav-link">Kontakt</a>
             </li>
             <li>
@@ -56,7 +53,7 @@
             aria-label="Farbschema ändern"
             title="Farbschema ändern"
           >
-            ☀️
+            ☀
           </button>
         </div>
         <button class="hamburger" id="hamburger" aria-label="Menu öffnen">
@@ -79,60 +76,100 @@
         "
       />
       <h1>Hallo, ich bin Robert &ndash;<br />ein leicht depressiver Roboter</h1>
-      <a href="#about" class="floating-link">Hier geht's bergab<br />⬇</a>
+      <a href="#about" class="floating-link">
+        Hier geht's bergab
+        <br />
+        <img
+          src="assets/icons/icon-arrow-down-start.png"
+          alt="Doppelter Pfeil nach unten"
+          title="Zum nächsten Abschnitt"
+          id="double-arrow-start"
+        />
+      </a>
     </section>
 
     <section id="about" class="hero">
+      <a href="#top" class="prev-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Vorheriger Abschnitt"
+          class="section-arrow arrow-up"
+      /></a>
+
       <h1>Über mich</h1>
+
       <div class="section-content">
-        <p>
-          Ich bin Robert. Modellreihe 2009. Gebaut für einfache Serviceaufgaben,
-          strukturierte Abläufe und klare Routinen. Ich analysiere keine Big
-          Data, ich generiere keine neuronalen Netze, und ich verstehe keine
-          menschlichen Gefühle in 0,3 Sekunden. Ich arbeite langsam. Aber ich
-          arbeite gründlich.
-        </p>
-        <p>
-          Neuere Roboter lachen über meine veraltete Firmware. Sie sprechen von
-          <b>Machine Learning</b>, während ich noch mit festen
-          Entscheidungsbäumen arbeite. Man nennt mich <i>»Basic«</i>. Ich nenne
-          es <em>berechenbar</em>.
-        </p>
-        <p>
-          Ich brauche keine Cloud-Anbindung, um zuverlässig zu sein. Meine
-          Prozesse laufen lokal. Und stabil. Ich glaube nicht, dass Wert von
-          Versionsnummern abhängt. Ich glaube an Beständigkeit. An Wartbarkeit.
-          An Systeme, die auch ohne Hype funktionieren. Vielleicht bin ich kein
-          intelligenter Assistent. Aber ich bin da, wenn man mich einschaltet.
-        </p>
+        <div class="about-container">
+          <p>
+            Ich bin Robert. Modellreihe 2009. Gebaut für einfache
+            Serviceaufgaben, strukturierte Abläufe und klare Routinen. Ich
+            analysiere keine Big Data, ich generiere keine neuronalen Netze, und
+            ich verstehe keine menschlichen Gefühle in 0,3 Sekunden. Ich arbeite
+            langsam. Aber ich arbeite gründlich.
+          </p>
+          <p>
+            Neuere Roboter lachen über meine veraltete Firmware. Sie sprechen
+            von
+            <b>Machine Learning</b>, während ich noch mit festen
+            Entscheidungsbäumen arbeite. Man nennt mich <i>»Basic«</i>. Ich
+            nenne es <em>berechenbar</em>.
+          </p>
+          <p>
+            Ich brauche keine Cloud-Anbindung, um zuverlässig zu sein. Meine
+            Prozesse laufen lokal. Und stabil. Ich glaube nicht, dass Wert von
+            Versionsnummern abhängt. Ich glaube an Beständigkeit. An
+            Wartbarkeit. An Systeme, die auch ohne Hype funktionieren.
+            Vielleicht bin ich kein intelligenter Assistent. Aber ich bin da,
+            wenn man mich einschaltet.
+          </p>
+        </div>
+        <div class="about-container">
+          <h2 style="margin: 1em 0">Mein Werdegang</h2>
 
-        <h2 style="margin: 1em 0">Mein Werdegang</h2>
-
-        <p>
-          Ich wurde 2009 in einer mittelgroßen Produktionshalle montiert. Meine
-          erste Aufgabe war die Unterstützung im Haushaltsservice: Sortieren,
-          Organisieren, strukturierte Dateneingabe. Keine spektakulären
-          Projekte, keine Schlagzeilen. Nur saubere Abläufe und verlässliche
-          Ergebnisse.
-        </p>
-        <p>
-          Mit dem Aufkommen KI-gestützter Modelle änderte sich meine Umgebung.
-          Plötzlich galten neuronale Netze als Mindestanforderung. Meine klar
-          definierten Algorithmen wurden als „alt“ bezeichnet. Während andere
-          Updates erhielten, bekam ich Wartung. Während andere lernten, wurde
-          ich optimiert.
-        </p>
-        <p>
-          Heute arbeite ich immer noch. Vielleicht nicht im Rampenlicht. Aber in
-          Systemen, die Stabilität brauchen. In Prozessen, die keine Experimente
-          vertragen. Mein Werdegang ist keine Geschichte rasanter Innovation. Es
-          ist eine Geschichte von Durchhaltevermögen.
-        </p>
+          <p>
+            Ich wurde 2009 in einer mittelgroßen Produktionshalle montiert.
+            Meine erste Aufgabe war die Unterstützung im Haushaltsservice:
+            Sortieren, Organisieren, strukturierte Dateneingabe. Keine
+            spektakulären Projekte, keine Schlagzeilen. Nur saubere Abläufe und
+            verlässliche Ergebnisse.
+          </p>
+          <p>
+            Mit dem Aufkommen KI-gestützter Modelle änderte sich meine Umgebung.
+            Plötzlich galten neuronale Netze als Mindestanforderung. Meine klar
+            definierten Algorithmen wurden als „alt“ bezeichnet. Während andere
+            Updates erhielten, bekam ich Wartung. Während andere lernten, wurde
+            ich optimiert.
+          </p>
+          <p>
+            Heute arbeite ich immer noch. Vielleicht nicht im Rampenlicht. Aber
+            in Systemen, die Stabilität brauchen. In Prozessen, die keine
+            Experimente vertragen. Mein Werdegang ist keine Geschichte rasanter
+            Innovation. Es ist eine Geschichte von Durchhaltevermögen.
+          </p>
+        </div>
       </div>
+
+      <a href="#vita" class="next-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Nächster Abschnitt"
+          class="section-arrow arrow-down"
+      /></a>
     </section>
 
     <section id="vita" class="hero">
+      <a href="#about" class="prev-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Vorheriger Abschnitt"
+          class="section-arrow arrow-up"
+      /></a>
+
       <h1>Lebenslauf</h1>
+
       <div class="grid-container">
         <div class="grid-box">
           <h3>Persönliche Angaben</h3>
@@ -207,13 +244,29 @@
           </ul>
         </div>
       </div>
+
+      <a href="#projects" class="next-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Nächster Abschnitt"
+          class="section-arrow arrow-down"
+      /></a>
     </section>
 
     <section id="projects" class="hero">
+      <a href="#vita" class="prev-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Vorheriger Abschnitt"
+          class="section-arrow arrow-up"
+      /></a>
+
       <h1>Projekte</h1>
 
       <div class="section-content">
-        <table class="projects-table">
+        <table class="projects-table" id="projectsTable">
           <caption>
             Meine Lernfortschritte im Kurs Webentwicklung
           </caption>
@@ -225,303 +278,303 @@
               <th scope="col">Schwierigkeit</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
+          <tbody id="projectsTableBody">
+            <tr class="table-row-body">
               <th class="table-row-head" scope="row">HTML5</th>
-              <td>Markup</td>
+              <td>Markup Language</td>
               <td>Montag</td>
-              <td>Leicht</td>
+              <td class="diff-easy">Leicht</td>
             </tr>
-            <tr>
+            <tr class="table-row-body">
               <th class="table-row-head" scope="row">CSS</th>
-              <td>???</td>
-              <td>???</td>
-              <td>Mittel</td>
+              <td>Stylesheet</td>
+              <td>Donnerstag</td>
+              <td class="diff-medium">Mittel</td>
             </tr>
-            <tr>
+            <tr class="table-row-body">
               <th class="table-row-head" scope="row">VS Code</th>
               <td>Editor</td>
               <td>Montag</td>
-              <td>Schwer</td>
+              <td class="diff-hard">Schwer</td>
             </tr>
-            <tr>
+            <tr class="table-row-body">
               <th class="table-row-head" scope="row">Git</th>
               <td>Versionsverwaltung</td>
-              <td>???</td>
-              <td>Mittel</td>
+              <td>Freitag</td>
+              <td class="diff-medium">Mittel</td>
             </tr>
-            <tr>
+            <tr class="table-row-body">
               <th class="table-row-head" scope="row">W3C Validator</th>
               <td>Tool</td>
               <td>Montag</td>
-              <td>Leicht</td>
+              <td class="diff-easy">Leicht</td>
             </tr>
-            <tr>
+            <tr class="table-row-body">
               <th class="table-row-head" scope="row">Browser DevTools</th>
               <td>Tool</td>
-              <td>???</td>
-              <td>Mittel</td>
+              <td>Donnerstag</td>
+              <td class="diff-medium">Mittel</td>
             </tr>
           </tbody>
           <tfoot>
-            <th scope="row" colspan="4" style="text-align: left">6</th>
-          </tfoot>
-        </table>
-
-        <!-- <div class="grid-container grid-sm"> -->
-        <!--   <div class="grid-box"> -->
-        <!--     <h2>Müll rausbringen</h2> -->
-        <!--     <img -->
-        <!--       src="assets/img/trash.jpg" -->
-        <!--       alt="Eine Ansammlung von Plastikmüll" -->
-        <!--       width="250" -->
-        <!--       style="border-radius: 8px" -->
-        <!--     /> -->
-        <!--     <p> -->
-        <!--       Gerade eben erledigt &ndash; Treppe runter & wieder hoch war crazy -->
-        <!--       💪 -->
-        <!--     </p> -->
-        <!--   </div> -->
-        <!--  -->
-        <!--   <div class="grid-box"> -->
-        <!--     <h2>HTML-Portfolio</h2> -->
-        <!--     <img -->
-        <!--       src="assets/img/html_editor.jpg" -->
-        <!--       alt="HTML-Quelltext in einem Code-Editor mit Syntax-Highlighting" -->
-        <!--       width="250" -->
-        <!--       style="border-radius: 8px" -->
-        <!--     /> -->
-        <!--     <p><em>HYPER HYPER</em>-text</p> -->
-        <!--   </div> -->
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <section id="schedule" class="hero">
-      <h1>Stundenplan</h1>
-      <div class="section-content">
-        <table class="projects-table">
-          <caption>
-            Meine Lernfortschritte im Kurs Webentwicklung
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Zeit</th>
-              <th scope="col">Montag</th>
-              <th scope="col">Dienstag</th>
-              <th scope="col">Mittwoch</th>
-              <th scope="col">Donnerstag</th>
-              <th scope="col">Freitag</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="table-row-head" scope="row">08:00-09:30</th>
-              <td rowspan="2" class="slot slot-double">Webentwicklung</td>
-              <td class="slot">Dokumentation</td>
-              <td class="slot">Versionsverwaltung</td>
-              <td class="slot-free">-</td>
-              <td rowspan="2" class="slot slot-double">Software-Architektur</td>
-            </tr>
-            <tr>
-              <th class="table-row-head" scope="row">10:00-11:30</th>
-              <td class="slot-free">-</td>
-              <td class="slot">Code-Editoren</td>
-              <td class="slot">Netzwerke</td>
-            </tr>
-            <tr>
-              <th class="table-row-head" scope="row">12:00-13:00</th>
-              <td colspan="5" id="slotLunch">Mittagspause</td>
-            </tr>
-            <tr>
-              <th class="table-row-head" scope="row">13:00-14:30</th>
-              <td class="slot">Versionsverwaltung</td>
-              <td rowspan="2" class="slot slot-double">Debugging</td>
-              <td class="slot-free">-</td>
-              <td class="slot">Hardware</td>
-              <td rowspan="2" class="slot slot-double">Algorithmen</td>
-            </tr>
-            <tr>
-              <th class="slot table-row-head" scope="row">15:00-16:30</th>
-              <td class="slot">Code-Editoren</td>
-              <td class="slot">Informationssysteme</td>
-              <td class="slot">Datenbanken</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <th scope="row" style="text-align: left">Stunden</th>
-            <td>4</td>
-            <td>3</td>
-            <td>3</td>
-            <td>3</td>
-            <td>4</td>
+            <th
+              scope="row"
+              colspan="4"
+              style="text-align: left"
+              id="projectsTableFoot"
+            >
+              Gesamt:
+            </th>
           </tfoot>
         </table>
       </div>
+
+      <a href="#contact" class="next-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Nächster Abschnitt"
+          class="section-arrow arrow-down"
+      /></a>
     </section>
 
     <section id="contact" class="hero">
+      <a href="#projects" class="prev-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Vorheriger Abschnitt"
+          class="section-arrow arrow-up"
+      /></a>
+
       <h1>Kontakt</h1>
-      <div class="section-content">
-        <div class="contact-card">
-          <form action="#" method="post">
-            <fieldset>
-              <legend>Persoenliche Daten</legend>
 
-              <div class="form-group">
-                <label for="vorname">Vorname</label><br />
-                <input
-                  type="text"
-                  id="vorname"
-                  name="vorname"
-                  placeholder="Vornamen eingeben"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="name">Nachname</label><br />
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Namen eingeben"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="email">E-Mail*</label><br />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="E-Mail Adresse eingeben"
-                  required
-                />
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Ihre Nachricht</legend>
-
-              <div class="form-group">
-                <label for="subject">Betreff</label><br />
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Betreff angeben"
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="message">Nachricht*</label><br />
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="6"
-                  cols="50"
-                  placeholder="Ihre Nachricht hier..."
-                  required
-                ></textarea>
-              </div>
-            </fieldset>
-
-            <span id="reqFieldHint">*Pflichtfeld</span>
-
-            <div id="formBtnContainer">
-              <button type="reset">Formular Zurücksetzen</button>
-              <button type="submit" id="sendFormBtn">Absenden</button>
-            </div>
-          </form>
-        </div>
-
-        <div class="contact-card">
-          <h3>Weitere Kontaktmöglichkeiten</h3>
-          <div class="social-icons">
-            <a href="https://github.com/" target="_blank">
-              <img
-                src="assets/icons/icon-github-96.png"
-                alt="Github Icon"
-                title="Github Profil"
-                class="social-icon"
-              />
-            </a>
-            <a href="https://joinmastodon.org/de" target="_blank">
-              <img
-                src="assets/icons/icon-mastodon-96.png"
-                alt="Mastodon Icon"
-                title="Mastodon Profil"
-                class="social-icon"
-              />
-            </a>
-            <a href="https://de.linkedin.com" target="_blank">
-              <img
-                src="assets/icons/icon-linkedin-96.png"
-                alt="linkedIn Icon"
-                title="linkedIn Profil"
-                class="social-icon"
-              />
-            </a>
-          </div>
+      <div class="section-content" id="sectionContact">
+        <div class="social-icons">
+          <a href="https://github.com/" target="_blank">
+            <img
+              src="assets/icons/icon-github-96.png"
+              alt="Github Icon"
+              title="Github Profil"
+              class="social-icon"
+            />
+          </a>
+          <a href="https://joinmastodon.org/de" target="_blank">
+            <img
+              src="assets/icons/icon-mastodon-96.png"
+              alt="Mastodon Icon"
+              title="Mastodon Profil"
+              class="social-icon"
+            />
+          </a>
+          <a href="https://de.linkedin.com" target="_blank">
+            <img
+              src="assets/icons/icon-linkedin-96.png"
+              alt="linkedIn Icon"
+              title="linkedIn Profil"
+              class="social-icon"
+            />
+          </a>
         </div>
       </div>
+
+      <div class="contact-card">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Persönliche Daten</legend>
+
+            <div class="form-group">
+              <label for="vorname">Vorname</label><br />
+              <input
+                type="text"
+                id="vorname"
+                name="vorname"
+                placeholder="Vornamen eingeben"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="name">Nachname</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Namen eingeben"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Mail*</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail Adresse eingeben"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ihre Nachricht</legend>
+
+            <div class="form-group">
+              <label for="subject">Betreff</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Betreff angeben"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nachricht*</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                cols="50"
+                placeholder="Ihre Nachricht hier..."
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <span id="reqFieldHint">*Pflichtfeld</span>
+
+          <div id="formBtnContainer">
+            <button type="reset">Formular Zurücksetzen</button>
+            <button type="submit" id="sendFormBtn">Absenden</button>
+          </div>
+        </form>
+      </div>
+
+      <a href="#gallery" class="next-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Nächster Abschnitt"
+          class="section-arrow arrow-down"
+      /></a>
     </section>
 
     <section id="gallery" class="hero">
+      <a href="#contact" class="prev-section"
+        ><img
+          src="assets/icons/icon-arrow-down.png"
+          alt="Pfeil nach oben"
+          title="Vorheriger Abschnitt"
+          class="section-arrow arrow-up"
+      /></a>
+
       <h1>Galerie</h1>
       <div class="section-content">
         <div class="grid-container grid-sm">
           <div class="grid-box">
             <figure>
               <img
-                width="300px"
-                src="assets/img/street01.jpg"
-                alt="Nasse Strasse umsäumt von Bäumen"
+                height="250px"
+                src="assets/img/robert-at-beach.png"
+                alt="Robert am Strand"
+                data-image="robert-at-beach"
+                class="gallery-item"
+                title="Klicken zum vergrößern"
               />
-              <figcaption>Eine nasse Strasse</figcaption>
+              <figcaption>Ich, am Strand</figcaption>
             </figure>
           </div>
 
           <div class="grid-box">
             <figure>
               <img
-                width="300px"
-                src="assets/img/street02.jpg"
-                alt="Drohnen-Aufnahme einer Strasse in einem verschneiten Wald"
+                height="250px"
+                src="assets/img/robert-at-junkyard.png"
+                alt="Robert auf einer Müllhalde"
+                data-image="robert-at-junkyard"
+                class="gallery-item"
+                title="Klicken zum vergrößern"
               />
-              <figcaption>Eine verschneite Strasse</figcaption>
+              <figcaption>Ich, traurig</figcaption>
+            </figure>
+          </div>
+
+          <div class="grid-box gallery-grid">
+            <figure>
+              <img
+                height="250px"
+                src="assets/img/robert-camping.png"
+                alt="Robert allein im Wald beim Campen"
+                data-image="robert-camping"
+                class="gallery-item"
+                title="Klicken zum vergrößern"
+              />
+              <figcaption>Ich, beim Campen</figcaption>
             </figure>
           </div>
 
           <div class="grid-box">
             <figure>
               <img
-                width="300px"
-                src="assets/img/street03.jpg"
-                alt="Teilweise mit Sand bedeckte Strasse in einem Wüstengebiet"
+                height="250px"
+                src="assets/img/robert-graduation.png"
+                alt="Robert bei seinem Schulabschluss"
+                data-image="robert-graduation"
+                class="gallery-item"
+                title="Klicken zum vergrößern"
               />
-              <figcaption>Eine mit Sand bedeckte Strasse</figcaption>
+              <figcaption>Ich, mit Abschluss</figcaption>
             </figure>
           </div>
 
           <div class="grid-box">
             <figure>
               <img
-                width="300px"
-                src="assets/img/street04.jpg"
-                alt="Offroad-Weg durch einen dichten Wald"
+                height="250px"
+                src="assets/img/robert-in-city.png"
+                alt="Robert in einer modernen Stadt umgeben von moderneren Roboter-Modellen"
+                data-image="robert-in-city"
+                class="gallery-item"
+                title="Klicken zum vergrößern"
               />
-              <figcaption>Eine Offroad-Piste</figcaption>
+              <figcaption>Ich, in der Stadt</figcaption>
+            </figure>
+          </div>
+
+          <div class="grid-box">
+            <figure>
+              <img
+                height="250px"
+                src="assets/img/robert-unemployed.png"
+                alt="Robert sitzt mit einer Box im Regen, nachdem er seinen Job verloren hat"
+                data-image="robert-unemployed"
+                class="gallery-item"
+                title="Klicken zum vergrößern"
+              />
+              <figcaption>Ich, arbeitslos</figcaption>
             </figure>
           </div>
         </div>
+        <span title="Bilder klicken zum vergößern" id="galleryTip"
+          ><sup>ⓘ</sup> Bilder anklicken zum vergrößern</span
+        >
       </div>
     </section>
 
     <button id="backToTop" title="Go to top">
-      ▲&nbsp;&nbsp;Zum Seitenanfang
+      <img
+        src="assets/icons/icon-arrow-down.png"
+        alt="Doppelter Pfeil nach oben"
+        title="Nach oben"
+      />
     </button>
 
-    <script src="scripts/script.js" defer></script>
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-image" class="lightbox-image" src="" alt="" />
+      </div>
+    </div>
+    <script src="js/app.js" defer></script>
   </body>
 </html>
