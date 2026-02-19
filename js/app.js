@@ -70,7 +70,7 @@ function setupScrollAnimations() {
       document.documentElement.scrollHeight - window.innerHeight;
 
     const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    progressBar.style.height = `${progress}%`;
+    progressBar.style.transform = `scaleX(${progress / 100})`;
   });
 }
 
