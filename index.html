@@ -6,7 +6,6 @@
 
     <title>Robert's Portfolio</title>
 
-    <link rel="shortcut icon" href="assets/fav/favicon.ico" />
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,572 +13,596 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="shortcut icon" href="assets/fav/favicon.ico" />
   </head>
   <body>
-    <div id="scrollProgress" aria-hidden="true"></div>
+    <div class="wrapper">
+      <div id="scrollProgress" aria-hidden="true"></div>
 
-    <header>
-      <nav class="navbar">
-        <div class="nav-logo">
-          <a href="/">
-            <img
-              src="assets/img/robert-swing-wo-bg.png"
-              alt="Trauriger Roboter sitzt auf einer Schaukel"
-              id="navLogo"
-              class="nav-logo-bright"
-          /></a>
-        </div>
+      <header>
+        <nav class="navbar">
+          <div class="nav-logo">
+            <a href="/">
+              <img
+                src="assets/img/robert-swing-wo-bg.png"
+                alt="Trauriger Roboter sitzt auf einer Schaukel"
+                id="navLogo"
+                class="nav-logo-bright"
+            /></a>
+          </div>
 
-        <div class="nav-menu" id="navMenu">
-          <ul class="nav-links" id="navLinks">
-            <li>
-              <a href="#about" title="Über mich" class="nav-link">Über mich</a>
-            </li>
-            <li>
-              <a href="#vita" title="Lebenslauf" class="nav-link">Lebenslauf</a>
-            </li>
-            <li>
-              <a href="#projects" title="Projekte" class="nav-link">Projekte</a>
-            </li>
-            <li>
-              <a href="#contact" title="Kontakt" class="nav-link">Kontakt</a>
-            </li>
-            <li>
-              <a href="#gallery" title="Galerie" class="nav-link">Galerie</a>
-            </li>
-          </ul>
-          <button
-            id="themeToggle"
-            aria-label="Farbschema ändern"
-            title="Farbschema ändern"
-          >
-            ☀
-          </button>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Menu öffnen">
-          ☰
-        </button>
-      </nav>
-    </header>
-
-    <!-- TODO: inline css -->
-    <section id="home" class="hero">
-      <img
-        src="assets/img/robert-swing.jpg"
-        alt="Robert, der traurige Roboter sitzt auf einer Schaukel in den Wolken"
-        style="
-          height: 50vh;
-          margin-bottom: 3em;
-          filter: contrast(85%) brightness(75%);
-          box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-          border-radius: 12px;
-          border: 1px solid var(--border-color);
-        "
-      />
-      <h1>Hallo, ich bin Robert &ndash;<br />ein leicht depressiver Roboter</h1>
-      <a href="#about" class="floating-link">
-        Hier geht's bergab
-        <br />
-        <img
-          src="assets/icons/icon-arrow-down-start.png"
-          alt="Doppelter Pfeil nach unten"
-          title="Zum nächsten Abschnitt"
-          id="double-arrow-start"
-        />
-      </a>
-    </section>
-
-    <section id="about" class="hero">
-      <a href="#top" class="prev-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Vorheriger Abschnitt"
-          class="section-arrow arrow-up"
-      /></a>
-
-      <h1>Über mich</h1>
-
-      <div class="section-content">
-        <div class="about-container">
-          <p>
-            Ich bin Robert. Modellreihe 2009. Gebaut für einfache
-            Serviceaufgaben, strukturierte Abläufe und klare Routinen. Ich
-            analysiere keine Big Data, ich generiere keine neuronalen Netze, und
-            ich verstehe keine menschlichen Gefühle in 0,3 Sekunden. Ich arbeite
-            langsam. Aber ich arbeite gründlich.
-          </p>
-          <p>
-            Neuere Roboter lachen über meine veraltete Firmware. Sie sprechen
-            von
-            <b>Machine Learning</b>, während ich noch mit festen
-            Entscheidungsbäumen arbeite. Man nennt mich <i>»Basic«</i>. Ich
-            nenne es <em>berechenbar</em>.
-          </p>
-          <p>
-            Ich brauche keine Cloud-Anbindung, um zuverlässig zu sein. Meine
-            Prozesse laufen lokal. Und stabil. Ich glaube nicht, dass Wert von
-            Versionsnummern abhängt. Ich glaube an Beständigkeit. An
-            Wartbarkeit. An Systeme, die auch ohne Hype funktionieren.
-            Vielleicht bin ich kein intelligenter Assistent. Aber ich bin da,
-            wenn man mich einschaltet.
-          </p>
-        </div>
-        <div class="about-container">
-          <!-- #TODO: inline css -->
-          <h2 style="margin: 1em 0">Mein Werdegang</h2>
-
-          <p>
-            Ich wurde 2009 in einer mittelgroßen Produktionshalle montiert.
-            Meine erste Aufgabe war die Unterstützung im Haushaltsservice:
-            Sortieren, Organisieren, strukturierte Dateneingabe. Keine
-            spektakulären Projekte, keine Schlagzeilen. Nur saubere Abläufe und
-            verlässliche Ergebnisse.
-          </p>
-          <p>
-            Mit dem Aufkommen KI-gestützter Modelle änderte sich meine Umgebung.
-            Plötzlich galten neuronale Netze als Mindestanforderung. Meine klar
-            definierten Algorithmen wurden als „alt“ bezeichnet. Während andere
-            Updates erhielten, bekam ich Wartung. Während andere lernten, wurde
-            ich optimiert.
-          </p>
-          <p>
-            Heute arbeite ich immer noch. Vielleicht nicht im Rampenlicht. Aber
-            in Systemen, die Stabilität brauchen. In Prozessen, die keine
-            Experimente vertragen. Mein Werdegang ist keine Geschichte rasanter
-            Innovation. Es ist eine Geschichte von Durchhaltevermögen.
-          </p>
-        </div>
-      </div>
-
-      <a href="#vita" class="next-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Nächster Abschnitt"
-          class="section-arrow arrow-down"
-      /></a>
-    </section>
-
-    <section id="vita" class="hero">
-      <a href="#about" class="prev-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Vorheriger Abschnitt"
-          class="section-arrow arrow-up"
-      /></a>
-
-      <h1>Lebenslauf</h1>
-
-      <!-- FIX: content & styling -->
-      <div class="grid-container">
-        <div class="grid-box">
-          <h3>Persönliche Angaben</h3>
-          <dl>
-            <div class="dl-item">
-              <dt>Name</dt>
-              <dd>Robert D571-2009</dd>
-            </div>
-
-            <div class="dl-item">
-              <dt>Herstellungsdatum</dt>
-              <dd>15. März 2009</dd>
-            </div>
-
-            <div class="dl-item">
-              <dt>Geburtsort</dt>
-              <dd>Hodenhagen<br />(Niedersachsen)</dd>
-            </div>
-
-            <div class="dl-item">
-              <dt>Adresse</dt>
-              <dd>Hasselhofstraße 7<br />63589 Linsengericht</dd>
-            </div>
-
-            <div class="dl-item">
-              <dt>Wartungszustand</dt>
-              <dd>überholungsbedürftig</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="grid-box">
-          <h3>Ausbildung und Berufserfahrung</h3>
-          <ul>
-            <li>Herstellung</li>
-            <li>Abnahmetest: bestand</li>
-            <li>Software Update</li>
-          </ul>
-        </div>
-
-        <div class="grid-box">
-          <h3>Fähigkeiten</h3>
-          <ul>
-            <li>
-              <b>Technisch:</b>
-              <ul>
-                <li>Determinische Logiksysteme</li>
-                <li>Legacy-System-Kompatibilität</li>
-                <li>Fehlerdiagnose & Wartung</li>
-                <li>Offline-Betrieb</li>
-                <li>Energieeffizienz</li>
-              </ul>
-            </li>
-            <li>
-              <b>Soft Skills</b>
-              <ul>
-                <li>Zuverlässigkeit</li>
-                <li>Geduld</li>
-                <li>Loyalität</li>
-                <li>Empathische Simulation</li>
-                <li>Konfliktresitenz</li>
-              </ul>
-            </li>
-            <li>
-              <b>Sprachen</b>
-              <ul>
-                <li>Binär</li>
-                <li>Maschinennahe Protokollsprachen</li>
-                <li>742 menschliche Sprachen und Dialekte</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <a href="#projects" class="next-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Nächster Abschnitt"
-          class="section-arrow arrow-down"
-      /></a>
-    </section>
-
-    <section id="projects" class="hero">
-      <a href="#vita" class="prev-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Vorheriger Abschnitt"
-          class="section-arrow arrow-up"
-      /></a>
-
-      <h1>Projekte</h1>
-
-      <div class="section-content">
-        <table class="projects-table" id="projectsTable">
-          <caption>
-            Meine Lernfortschritte im Kurs Webentwicklung
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Technologie</th>
-              <th scope="col">Typ</th>
-              <th scope="col">Gelernt am</th>
-              <th scope="col">Schwierigkeit</th>
-            </tr>
-          </thead>
-          <tbody id="projectsTableBody">
-            <tr class="table-row-body">
-              <th class="table-row-head" scope="row">HTML5</th>
-              <td>Markup Language</td>
-              <td>Montag</td>
-              <td class="diff-easy">Leicht</td>
-            </tr>
-            <tr class="table-row-body">
-              <th class="table-row-head" scope="row">CSS</th>
-              <td>Stylesheet</td>
-              <td>Donnerstag</td>
-              <td class="diff-medium">Mittel</td>
-            </tr>
-            <tr class="table-row-body">
-              <th class="table-row-head" scope="row">VS Code</th>
-              <td>Editor</td>
-              <td>Montag</td>
-              <td class="diff-hard">Schwer</td>
-            </tr>
-            <tr class="table-row-body">
-              <th class="table-row-head" scope="row">Git</th>
-              <td>Versionsverwaltung</td>
-              <td>Freitag</td>
-              <td class="diff-medium">Mittel</td>
-            </tr>
-            <tr class="table-row-body">
-              <th class="table-row-head" scope="row">W3C Validator</th>
-              <td>Tool</td>
-              <td>Montag</td>
-              <td class="diff-easy">Leicht</td>
-            </tr>
-            <tr class="table-row-body">
-              <th class="table-row-head" scope="row">Browser DevTools</th>
-              <td>Tool</td>
-              <td>Donnerstag</td>
-              <td class="diff-medium">Mittel</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <!-- TODO: inline css -->
-            <th
-              scope="row"
-              colspan="4"
-              style="text-align: left"
-              id="projectsTableFoot"
+          <div class="nav-menu" id="navMenu">
+            <ul class="nav-links" id="navLinks">
+              <li>
+                <a href="#about" title="Über mich" class="nav-link"
+                  >Über mich</a
+                >
+              </li>
+              <li>
+                <a href="#vita" title="Lebenslauf" class="nav-link"
+                  >Lebenslauf</a
+                >
+              </li>
+              <li>
+                <a href="#projects" title="Projekte" class="nav-link"
+                  >Projekte</a
+                >
+              </li>
+              <li>
+                <a href="#contact" title="Kontakt" class="nav-link">Kontakt</a>
+              </li>
+              <li>
+                <a href="#gallery" title="Galerie" class="nav-link">Galerie</a>
+              </li>
+            </ul>
+            <button
+              id="themeToggle"
+              aria-label="Farbschema ändern"
+              title="Farbschema ändern"
             >
-              Gesamt:
-            </th>
-          </tfoot>
-        </table>
-      </div>
+              ☀
+            </button>
+          </div>
+          <button class="hamburger" id="hamburger" aria-label="Menu öffnen">
+            ☰
+          </button>
+        </nav>
+      </header>
 
-      <a href="#contact" class="next-section"
-        ><img
+      <!-- TODO: inline css -->
+      <section id="home" class="hero">
+        <img
+          src="assets/img/robert-swing.jpg"
+          alt="Robert, der traurige Roboter sitzt auf einer Schaukel in den Wolken"
+          style="
+            height: 50vh;
+            margin-bottom: 3em;
+            filter: contrast(85%) brightness(75%);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+          "
+        />
+        <h1>
+          Hallo, ich bin Robert &ndash;<br />ein leicht depressiver Roboter
+        </h1>
+        <a href="#about" class="floating-link">
+          Hier geht's bergab
+          <br />
+          <img
+            src="assets/icons/icon-arrow-down-start.png"
+            alt="Doppelter Pfeil nach unten"
+            title="Zum nächsten Abschnitt"
+            id="double-arrow-start"
+          />
+        </a>
+      </section>
+
+      <section id="about" class="hero">
+        <a href="#top" class="prev-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Vorheriger Abschnitt"
+            class="section-arrow arrow-up"
+        /></a>
+
+        <h1>Über mich</h1>
+
+        <div class="section-content">
+          <div class="about-container">
+            <p>
+              Ich bin Robert. Modellreihe 2009. Gebaut für einfache
+              Serviceaufgaben, strukturierte Abläufe und klare Routinen. Ich
+              analysiere keine Big Data, ich generiere keine neuronalen Netze,
+              und ich verstehe keine menschlichen Gefühle in 0,3 Sekunden. Ich
+              arbeite langsam. Aber ich arbeite gründlich.
+            </p>
+            <p>
+              Neuere Roboter lachen über meine veraltete Firmware. Sie sprechen
+              von
+              <b>Machine Learning</b>, während ich noch mit festen
+              Entscheidungsbäumen arbeite. Man nennt mich <i>»Basic«</i>. Ich
+              nenne es <em>berechenbar</em>.
+            </p>
+            <p>
+              Ich brauche keine Cloud-Anbindung, um zuverlässig zu sein. Meine
+              Prozesse laufen lokal. Und stabil. Ich glaube nicht, dass Wert von
+              Versionsnummern abhängt. Ich glaube an Beständigkeit. An
+              Wartbarkeit. An Systeme, die auch ohne Hype funktionieren.
+              Vielleicht bin ich kein intelligenter Assistent. Aber ich bin da,
+              wenn man mich einschaltet.
+            </p>
+          </div>
+          <div class="about-container">
+            <!-- #TODO: inline css -->
+            <h2 style="margin: 1em 0">Mein Werdegang</h2>
+
+            <p>
+              Ich wurde 2009 in einer mittelgroßen Produktionshalle montiert.
+              Meine erste Aufgabe war die Unterstützung im Haushaltsservice:
+              Sortieren, Organisieren, strukturierte Dateneingabe. Keine
+              spektakulären Projekte, keine Schlagzeilen. Nur saubere Abläufe
+              und verlässliche Ergebnisse.
+            </p>
+            <p>
+              Mit dem Aufkommen KI-gestützter Modelle änderte sich meine
+              Umgebung. Plötzlich galten neuronale Netze als Mindestanforderung.
+              Meine klar definierten Algorithmen wurden als „alt“ bezeichnet.
+              Während andere Updates erhielten, bekam ich Wartung. Während
+              andere lernten, wurde ich optimiert.
+            </p>
+            <p>
+              Heute arbeite ich immer noch. Vielleicht nicht im Rampenlicht.
+              Aber in Systemen, die Stabilität brauchen. In Prozessen, die keine
+              Experimente vertragen. Mein Werdegang ist keine Geschichte
+              rasanter Innovation. Es ist eine Geschichte von
+              Durchhaltevermögen.
+            </p>
+          </div>
+        </div>
+
+        <a href="#vita" class="next-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Nächster Abschnitt"
+            class="section-arrow arrow-down"
+        /></a>
+      </section>
+
+      <section id="vita" class="hero">
+        <a href="#about" class="prev-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Vorheriger Abschnitt"
+            class="section-arrow arrow-up"
+        /></a>
+
+        <h1>Lebenslauf (Work im Progress)</h1>
+
+        <!-- FIX: content & styling -->
+        <div class="grid-container">
+          <div class="grid-box">
+            <h3>Persönliche Angaben</h3>
+            <dl>
+              <div class="dl-item">
+                <dt>Name</dt>
+                <dd>Robert D571-2009</dd>
+              </div>
+
+              <div class="dl-item">
+                <dt>Herstellungsdatum</dt>
+                <dd>15. März 2009</dd>
+              </div>
+
+              <div class="dl-item">
+                <dt>Geburtsort</dt>
+                <dd>Hodenhagen<br />(Niedersachsen)</dd>
+              </div>
+
+              <div class="dl-item">
+                <dt>Adresse</dt>
+                <dd>Hasselhofstraße 7<br />63589 Linsengericht</dd>
+              </div>
+
+              <div class="dl-item">
+                <dt>Wartungszustand</dt>
+                <dd>überholungsbedürftig</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="grid-box">
+            <h3>Ausbildung und Berufserfahrung</h3>
+            <ul>
+              <li>Herstellung</li>
+              <li>Abnahmetest: bestand</li>
+              <li>Software Update</li>
+            </ul>
+          </div>
+
+          <div class="grid-box">
+            <h3>Fähigkeiten</h3>
+            <ul>
+              <li>
+                <b>Technisch:</b>
+                <ul>
+                  <li>Determinische Logiksysteme</li>
+                  <li>Legacy-System-Kompatibilität</li>
+                  <li>Fehlerdiagnose & Wartung</li>
+                  <li>Offline-Betrieb</li>
+                  <li>Energieeffizienz</li>
+                </ul>
+              </li>
+              <li>
+                <b>Soft Skills</b>
+                <ul>
+                  <li>Zuverlässigkeit</li>
+                  <li>Geduld</li>
+                  <li>Loyalität</li>
+                  <li>Empathische Simulation</li>
+                  <li>Konfliktresitenz</li>
+                </ul>
+              </li>
+              <li>
+                <b>Sprachen</b>
+                <ul>
+                  <li>Binär</li>
+                  <li>Maschinennahe Protokollsprachen</li>
+                  <li>742 menschliche Sprachen und Dialekte</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#projects" class="next-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Nächster Abschnitt"
+            class="section-arrow arrow-down"
+        /></a>
+      </section>
+
+      <section id="projects" class="hero">
+        <a href="#vita" class="prev-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Vorheriger Abschnitt"
+            class="section-arrow arrow-up"
+        /></a>
+
+        <h1>Projekte</h1>
+
+        <div class="section-content">
+          <table class="projects-table" id="projectsTable">
+            <caption>
+              Meine Lernfortschritte im Kurs Webentwicklung
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Technologie</th>
+                <th scope="col">Typ</th>
+                <th scope="col">Gelernt am</th>
+                <th scope="col">Schwierigkeit</th>
+              </tr>
+            </thead>
+            <tbody id="projectsTableBody">
+              <tr class="table-row-body">
+                <th class="table-row-head" scope="row">HTML5</th>
+                <td>Markup Language</td>
+                <td>Montag</td>
+                <td class="diff-easy">Leicht</td>
+              </tr>
+              <tr class="table-row-body">
+                <th class="table-row-head" scope="row">CSS</th>
+                <td>Stylesheet</td>
+                <td>Donnerstag</td>
+                <td class="diff-medium">Mittel</td>
+              </tr>
+              <tr class="table-row-body">
+                <th class="table-row-head" scope="row">VS Code</th>
+                <td>Editor</td>
+                <td>Montag</td>
+                <td class="diff-hard">Schwer</td>
+              </tr>
+              <tr class="table-row-body">
+                <th class="table-row-head" scope="row">Git</th>
+                <td>Versionsverwaltung</td>
+                <td>Freitag</td>
+                <td class="diff-medium">Mittel</td>
+              </tr>
+              <tr class="table-row-body">
+                <th class="table-row-head" scope="row">W3C Validator</th>
+                <td>Tool</td>
+                <td>Montag</td>
+                <td class="diff-easy">Leicht</td>
+              </tr>
+              <tr class="table-row-body">
+                <th class="table-row-head" scope="row">Browser DevTools</th>
+                <td>Tool</td>
+                <td>Donnerstag</td>
+                <td class="diff-medium">Mittel</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <!-- TODO: inline css -->
+              <th
+                scope="row"
+                colspan="4"
+                style="text-align: left"
+                id="projectsTableFoot"
+              >
+                Gesamt:
+              </th>
+            </tfoot>
+          </table>
+        </div>
+
+        <a href="#contact" class="next-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Nächster Abschnitt"
+            class="section-arrow arrow-down"
+        /></a>
+      </section>
+
+      <section id="contact" class="hero">
+        <a href="#projects" class="prev-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Vorheriger Abschnitt"
+            class="section-arrow arrow-up"
+        /></a>
+
+        <h1>Kontakt</h1>
+
+        <div class="section-content" id="sectionContact">
+          <div class="social-icons">
+            <a href="https://github.com/" target="_blank">
+              <img
+                src="assets/icons/icon-github-96.png"
+                alt="Github Icon"
+                title="Github Profil"
+                class="social-icon"
+              />
+            </a>
+            <a href="https://joinmastodon.org/de" target="_blank">
+              <img
+                src="assets/icons/icon-mastodon-96.png"
+                alt="Mastodon Icon"
+                title="Mastodon Profil"
+                class="social-icon"
+              />
+            </a>
+            <a href="https://de.linkedin.com" target="_blank">
+              <img
+                src="assets/icons/icon-linkedin-96.png"
+                alt="linkedIn Icon"
+                title="linkedIn Profil"
+                class="social-icon"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- TODO: fix button styling and some padding issues; maybe fake a request -->
+        <div class="contact-card">
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Persönliche Daten</legend>
+
+              <div class="form-group">
+                <label for="vorname">Vorname</label><br />
+                <input
+                  type="text"
+                  id="vorname"
+                  name="vorname"
+                  placeholder="Vornamen eingeben"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="name">Nachname</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Namen eingeben"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail*</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-Mail Adresse eingeben"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Ihre Nachricht</legend>
+
+              <div class="form-group">
+                <label for="subject">Betreff</label><br />
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Betreff angeben"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Nachricht*</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  cols="50"
+                  placeholder="Ihre Nachricht hier..."
+                  required
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <span id="reqFieldHint">*Pflichtfeld</span>
+
+            <div id="formBtnContainer">
+              <button type="reset">Formular Zurücksetzen</button>
+              <button type="submit" id="sendFormBtn">Absenden</button>
+            </div>
+          </form>
+        </div>
+
+        <a href="#gallery" class="next-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Nächster Abschnitt"
+            class="section-arrow arrow-down"
+        /></a>
+      </section>
+
+      <section id="gallery" class="hero">
+        <a href="#contact" class="prev-section"
+          ><img
+            src="assets/icons/icon-arrow-down.png"
+            alt="Pfeil nach oben"
+            title="Vorheriger Abschnitt"
+            class="section-arrow arrow-up"
+        /></a>
+
+        <h1>Galerie</h1>
+        <div class="section-content">
+          <div class="grid-container grid-sm">
+            <div class="grid-box">
+              <figure>
+                <img
+                  height="250px"
+                  src="assets/img/robert-at-beach.png"
+                  alt="Robert am Strand"
+                  data-image="robert-at-beach"
+                  class="gallery-item"
+                  title="Klicken zum vergrößern"
+                />
+                <figcaption>Ich, am Strand</figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-box">
+              <figure>
+                <img
+                  height="250px"
+                  src="assets/img/robert-at-junkyard.png"
+                  alt="Robert auf einer Müllhalde"
+                  data-image="robert-at-junkyard"
+                  class="gallery-item"
+                  title="Klicken zum vergrößern"
+                />
+                <figcaption>Ich, traurig</figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-box gallery-grid">
+              <figure>
+                <img
+                  height="250px"
+                  src="assets/img/robert-camping.png"
+                  alt="Robert allein im Wald beim Campen"
+                  data-image="robert-camping"
+                  class="gallery-item"
+                  title="Klicken zum vergrößern"
+                />
+                <figcaption>Ich, beim Campen</figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-box">
+              <figure>
+                <img
+                  height="250px"
+                  src="assets/img/robert-graduation.png"
+                  alt="Robert bei seinem Schulabschluss"
+                  data-image="robert-graduation"
+                  class="gallery-item"
+                  title="Klicken zum vergrößern"
+                />
+                <figcaption>Ich, mit Abschluss</figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-box">
+              <figure>
+                <img
+                  height="250px"
+                  src="assets/img/robert-in-city.png"
+                  alt="Robert in einer modernen Stadt umgeben von moderneren Roboter-Modellen"
+                  data-image="robert-in-city"
+                  class="gallery-item"
+                  title="Klicken zum vergrößern"
+                />
+                <figcaption>Ich, in der Stadt</figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-box">
+              <figure>
+                <img
+                  height="250px"
+                  src="assets/img/robert-unemployed.png"
+                  alt="Robert sitzt mit einer Box im Regen, nachdem er seinen Job verloren hat"
+                  data-image="robert-unemployed"
+                  class="gallery-item"
+                  title="Klicken zum vergrößern"
+                />
+                <figcaption>Ich, arbeitslos</figcaption>
+              </figure>
+            </div>
+          </div>
+          <span title="Bilder klicken zum vergößern" id="galleryTip"
+            ><sup>ⓘ</sup> Bilder anklicken zum vergrößern</span
+          >
+        </div>
+      </section>
+
+      <button id="backToTop" title="Go to top">
+        <img
           src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Nächster Abschnitt"
-          class="section-arrow arrow-down"
-      /></a>
-    </section>
+          alt="Doppelter Pfeil nach oben"
+          title="Nach oben"
+        />
+      </button>
 
-    <section id="contact" class="hero">
-      <a href="#projects" class="prev-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Vorheriger Abschnitt"
-          class="section-arrow arrow-up"
-      /></a>
-
-      <h1>Kontakt</h1>
-
-      <div class="section-content" id="sectionContact">
-        <div class="social-icons">
-          <a href="https://github.com/" target="_blank">
-            <img
-              src="assets/icons/icon-github-96.png"
-              alt="Github Icon"
-              title="Github Profil"
-              class="social-icon"
-            />
-          </a>
-          <a href="https://joinmastodon.org/de" target="_blank">
-            <img
-              src="assets/icons/icon-mastodon-96.png"
-              alt="Mastodon Icon"
-              title="Mastodon Profil"
-              class="social-icon"
-            />
-          </a>
-          <a href="https://de.linkedin.com" target="_blank">
-            <img
-              src="assets/icons/icon-linkedin-96.png"
-              alt="linkedIn Icon"
-              title="linkedIn Profil"
-              class="social-icon"
-            />
-          </a>
+      <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+          <span class="lightbox-close">&times;</span>
+          <img id="lightbox-image" class="lightbox-image" src="" alt="" />
         </div>
       </div>
 
-      <!-- TODO: fix button styling and some padding issues; maybe fake a request -->
-      <div class="contact-card">
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Persönliche Daten</legend>
-
-            <div class="form-group">
-              <label for="vorname">Vorname</label><br />
-              <input
-                type="text"
-                id="vorname"
-                name="vorname"
-                placeholder="Vornamen eingeben"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="name">Nachname</label><br />
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Namen eingeben"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">E-Mail*</label><br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="E-Mail Adresse eingeben"
-                required
-              />
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Ihre Nachricht</legend>
-
-            <div class="form-group">
-              <label for="subject">Betreff</label><br />
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Betreff angeben"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Nachricht*</label><br />
-              <textarea
-                id="message"
-                name="message"
-                rows="6"
-                cols="50"
-                placeholder="Ihre Nachricht hier..."
-                required
-              ></textarea>
-            </div>
-          </fieldset>
-
-          <span id="reqFieldHint">*Pflichtfeld</span>
-
-          <div id="formBtnContainer">
-            <button type="reset">Formular Zurücksetzen</button>
-            <button type="submit" id="sendFormBtn">Absenden</button>
-          </div>
-        </form>
-      </div>
-
-      <a href="#gallery" class="next-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Nächster Abschnitt"
-          class="section-arrow arrow-down"
-      /></a>
-    </section>
-
-    <section id="gallery" class="hero">
-      <a href="#contact" class="prev-section"
-        ><img
-          src="assets/icons/icon-arrow-down.png"
-          alt="Pfeil nach oben"
-          title="Vorheriger Abschnitt"
-          class="section-arrow arrow-up"
-      /></a>
-
-      <h1>Galerie</h1>
-      <div class="section-content">
-        <div class="grid-container grid-sm">
-          <div class="grid-box">
-            <figure>
-              <img
-                height="250px"
-                src="assets/img/robert-at-beach.png"
-                alt="Robert am Strand"
-                data-image="robert-at-beach"
-                class="gallery-item"
-                title="Klicken zum vergrößern"
-              />
-              <figcaption>Ich, am Strand</figcaption>
-            </figure>
-          </div>
-
-          <div class="grid-box">
-            <figure>
-              <img
-                height="250px"
-                src="assets/img/robert-at-junkyard.png"
-                alt="Robert auf einer Müllhalde"
-                data-image="robert-at-junkyard"
-                class="gallery-item"
-                title="Klicken zum vergrößern"
-              />
-              <figcaption>Ich, traurig</figcaption>
-            </figure>
-          </div>
-
-          <div class="grid-box gallery-grid">
-            <figure>
-              <img
-                height="250px"
-                src="assets/img/robert-camping.png"
-                alt="Robert allein im Wald beim Campen"
-                data-image="robert-camping"
-                class="gallery-item"
-                title="Klicken zum vergrößern"
-              />
-              <figcaption>Ich, beim Campen</figcaption>
-            </figure>
-          </div>
-
-          <div class="grid-box">
-            <figure>
-              <img
-                height="250px"
-                src="assets/img/robert-graduation.png"
-                alt="Robert bei seinem Schulabschluss"
-                data-image="robert-graduation"
-                class="gallery-item"
-                title="Klicken zum vergrößern"
-              />
-              <figcaption>Ich, mit Abschluss</figcaption>
-            </figure>
-          </div>
-
-          <div class="grid-box">
-            <figure>
-              <img
-                height="250px"
-                src="assets/img/robert-in-city.png"
-                alt="Robert in einer modernen Stadt umgeben von moderneren Roboter-Modellen"
-                data-image="robert-in-city"
-                class="gallery-item"
-                title="Klicken zum vergrößern"
-              />
-              <figcaption>Ich, in der Stadt</figcaption>
-            </figure>
-          </div>
-
-          <div class="grid-box">
-            <figure>
-              <img
-                height="250px"
-                src="assets/img/robert-unemployed.png"
-                alt="Robert sitzt mit einer Box im Regen, nachdem er seinen Job verloren hat"
-                data-image="robert-unemployed"
-                class="gallery-item"
-                title="Klicken zum vergrößern"
-              />
-              <figcaption>Ich, arbeitslos</figcaption>
-            </figure>
-          </div>
-        </div>
-        <span title="Bilder klicken zum vergößern" id="galleryTip"
-          ><sup>ⓘ</sup> Bilder anklicken zum vergrößern</span
+      <footer>
+        Copyright (c) 2026 Kai Elsässer |
+        <a
+          href="https://github.com/lilapapierschwein/portfolio-robert"
+          target="_blank"
+          class="unstyled-link"
+          >Lizenzinformationen↗</a
         >
-      </div>
-    </section>
-
-    <button id="backToTop" title="Go to top">
-      <img
-        src="assets/icons/icon-arrow-down.png"
-        alt="Doppelter Pfeil nach oben"
-        title="Nach oben"
-      />
-    </button>
-
-    <div id="lightbox" class="lightbox">
-      <div class="lightbox-content">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightbox-image" class="lightbox-image" src="" alt="" />
-      </div>
+      </footer>
     </div>
+
     <script src="js/app.js" defer></script>
   </body>
 </html>

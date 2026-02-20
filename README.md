@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Diese Webseite wurde im Rahmen des Kurses **WebEntwicklung** am [Robotron Bildungs- und Beratungszentrum](https://www.robotron-online.de/) in Leipzig erstellt. dozent: Erik Schwob ([LinkedIn-Profil](https://de.linkedin.com/in/erik-schwob-910743324)).
+Diese Webseite wurde im Rahmen des Kurses **WebEntwicklung** am [Robotron Bildungs- und Beratungszentrum](https://www.robotron-online.de/) in Leipzig erstellt. Dozent: Erik Schwob.
 
 ## Roboter-Charakter
 
